@@ -1,0 +1,15 @@
+{
+    "name": "Roll20 leave confirmer",
+    "version": "1.0",
+    "description": "Prompts the user if they try to leave a roll20 game. To prevent having to rejoin.",
+    "manifest_version": 2,
+    "permissions": [
+      "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["https://app.roll20.net/editor/"],
+            "js": ["confirmer.js"]
+        }
+    ]
+}
